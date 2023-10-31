@@ -1,0 +1,54 @@
+/* ============== modal style ============ */
+.delete__modal {
+  background: rgba(9, 10, 17, 0.76);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Change the width to 100% for responsiveness */
+  max-width: 400px; /* Set a maximum width to prevent it from becoming too wide on large screens */
+  padding: 5% 10%; /* Adjust padding for smaller screens */
+  background: var(--secondary-color);
+  z-index: 99999999;
+  border-radius: 5px;
+}
+
+.modal h3 {
+  margin-bottom: 15px;
+}
+
+.modal p {
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+
+.modal__btns {
+  margin-top: 25px;
+}
+
+.modal__btns button:first-child {
+  background: #fff;
+  color: var(--secondary-color);
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+  .modal {
+      max-width: 90%; /* Adjust the maximum width for smaller screens */
+      padding: 10% 15%; /* Adjust padding for smaller screens */
+  }
+
+  .modal p {
+      font-size: 0.7rem; /* Decrease font size for smaller screens */
+  }
+}
